@@ -14,24 +14,28 @@
 <body>
   <div class="container">
     <h1>World Weather App</h1>
-    <form class="form-inline">
-      <div class="form-group">
-        <input type="text" class="form-control" id="search-input" autofocus="on" autocomplete = "off" placeholder="Search over 200,000 cities here...">
-        <button type="submit" class="btn btn-primary" id="search-button">Search</button>
-        <button type="submit" class="btn btn-success" id="find-location-button"><i class="fas fa-map-marker-alt"></i></button>
-      </div>
-    </form>
-    <div class="todaysWeather" id="todays-weather">
+    <div class="card">
+      <form class="form-inline">
+        <div class="form-group">
+          <input type="text" class="form-control" id="search-input" autofocus="on" autocomplete = "off" placeholder="Search over 200,000 cities here...">
+          <button type="submit" class="btn btn-primary" id="search-button">Search</button>
+          <button type="submit" class="btn btn-success" id="find-location-button"><i class="fas fa-map-marker-alt"></i></button>
+        </div>
+      </form>
+    </div>
+    <div class="currentWeather" id="current-weather">
       <h2 id="city">Auckland</h2>
       <h3 class="updatedTime">Last updated: <span id="time">Monday 10:00</span></h3>
       <h4 class="description" id="weatherDescription">Clouds</h4>
-      <div class="todaysWeatherGrid" id="todays-weather-grid">
+      <div class="currentWeatherGrid" id="current-weather-grid">
         <div class="row">
           <div class="col-3-description">
-            <div class="description" id="weather-icon">☁</div>
+            <div class="description" id="weather-icon">
+              <img src=" " alt="" id="currentIcon" />
+            </div>
           </div>
-          <div class="col-3-todaystemp" id="todays-temp">
-            <span id="todays-temp-fig">18</span>
+          <div class="col-3-currentTemp" id="current-temp">
+            <span id="current-temp-fig">18</span>
             <div class="mainTempUnit" id="main-unit">
               <span class="unit" id="celsius-unit">°C</span>|<span class=farenheight id="farenheight-unit">°F</span>
             </div>
@@ -56,31 +60,31 @@
       <div class="row">
         <div class="col-2-4-first" id="three-hour">
           <div class="forecastTime" id="three-hour-time">15:00</div>
-          <div class="forecastIcon" id="three-hour-icon">☀</div>
+          <div class="forecastIcon" id="three-hour-icon"><img src="" alt="" class="first"></div>
           <div class="forecastMax" id="three-hour-max-unit"><span id="three-hour-max">18</span><span class="unit">°C</span></div>
           <div class="forecastMin" id="three-hour-min-unit"><span id="three-hour-min">10</span><span class="unit">°C</span></div>
         </div>
         <div class="col-2-4-second" id="six-hour">
           <div class="forecastTime" id="six-hour-time">18:00</div>
-          <div class="forecastIcon" id="six-hour-icon">☀</div>
+          <div class="forecastIcon" id="six-hour-icon"><img src="" alt="" class="second"></div>
           <div class="forecastMax" id="six-hour-max-unit"><span id="six-hour-max">18</span><span class="unit">°C</span></div>
           <div class="forecastMin" id="six-hour-min-unit"><span id="six-hour-min">10</span><span class="unit">°C</span></div>
         </div>
         <div class="col-2-4-third" id="nine-hour">
           <div class="forecastTime" id="nine-hour-time">21:00</div>
-          <div class="forecastIcon" id="nine-hour-icon">☀</div>
+          <div class="forecastIcon" id="nine-hour-icon"><img src="" alt="" class="third"></div>
           <div class="forecastMax" id="nine-hour-max-unit"><span id="nine-hour-max">18</span><span class="unit">°C</span></div>
           <div class="forecastMin" id="nine-hour-min-unit"><span id="nine-hour-min">10</span><span class="unit">°C</span></div>
         </div>
         <div class="col-2-4-fourth" id="twelve-hour">
           <div class="forecastTime" id="twelve-hour-time">00:00</div>
-          <div class="forecastIcon" id="twelve-hour-icon">☀</div>
+          <div class="forecastIcon" id="twelve-hour-icon"><img src="" alt="" class="fourth"></div>
           <div class="forecastMax" id="twelve-hour-max-unit"><span id="twelve-hour-max">18</span><span class="unit">°C</span></div>
           <div class="forecastMin" id="twelve-hour-min-unit"><span id="twelve-hour-min">10</span><span class="unit">°C</span></div>
         </div>
         <div class="col-2-4-fifth" id="fifteen-hour">
           <div class="forecastTime" id="fifteen-hour-time">03:00</div>
-          <div class="forecastIcon" id="fifteen-hour-icon">☀</div>
+          <div class="forecastIcon" id="fifteen-hour-icon"><img src="" alt="" class="fifth"></div>
           <div class="forecastMax" id="fifteen-hour-max-unit"><span id="fifteen-hour-max">18</span><span class="unit">°C</span></div>
           <div class="forecastMin" id="fifteen-hour-min-unit"><span id="fifteen-hour-min">10</span><span class="unit">°C</span></div>
         </div>
