@@ -1,11 +1,9 @@
-body {
-  width: 550px;
-  margin: 0 auto;
-}
 h1 {
   font-size: 18px;
   margin: 10px;
   text-align: center;
+  font-weight: bold;
+  color: white;
 }
 h2 {
   padding: 4px 20px 0;
@@ -29,6 +27,9 @@ h4 {
   font-family: 'Catamaran', sans-serif;
   color: rgb(53, 70, 102);
   text-align: left;
+  width: 750px;
+  margin: 0 auto;
+  background-size: 100%;
 }
 .form-group {
   display: block;
@@ -37,6 +38,7 @@ h4 {
 
 .card {
   border: none;
+  background-color: rgba(0, 0, 255, 0);
 }
 
 #search-input {
@@ -52,16 +54,16 @@ h4 {
   background-color: rgb(68, 131, 68);
 }
 
-#current-weather, #three-hour, #six-hour, #nine-hour, #twelve-hour, #fifteen-hour {
+#current-weather, .col-2 {
   border: 0.5px solid rgb(53, 70, 102);
   border-radius: 4px;
-  background-color: rgba(217, 218, 216, 0.582);
-  margin: 20px;
+  background-color: rgba(246, 248, 244, 0.473);
+  margin: 15px;
 }
 
-.row {
+#current-row {
   margin: 0 auto;
-  width: 475px;
+  width: 650px;
 }
 
 #current-temp-fig {
@@ -72,23 +74,43 @@ h4 {
   vertical-align: 150%;
 }
 #current-min-max {
-  padding: 50px 10px 40px 10px;
+  padding: 55px 20px 40px 40px;
+  font-size: 20px;
+  margin: 10px;
 }
 .col-3-humWind {
-  padding: 35px 10px 20px 20px;
+  padding: 35px 10px 20px 40px;
   text-align: right;
+  margin: 20px;
 }
 
 #forecast-weather-grid{
   text-align: center;
-  padding: 0 0 20px;
+  padding: 0;
+}
+#forecast-row {
+  padding: 10px 0px;
+  flex-wrap: nowrap;
+  width: 600px;
+  margin: 0 10px;
 }
 
-#three-hour, #six-hour, #nine-hour, #twelve-hour, #fifteen-hour {
-  padding: 8px 25px;
-  margin: 20px auto;
+.col-2 {
+  padding: 8px 10px;
+  margin: 0 8px;
 }
 
 .forecastTime {
   font-size: 14px;
+}
+
+.forecastImage {
+  width: 50px;
+}
+#forecast-max {
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
 }

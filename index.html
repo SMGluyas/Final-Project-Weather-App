@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
+  <div class="container" style="background-image: url(img/overcast.jpg);">
     <h1>World Weather App</h1>
     <div class="card">
       <form class="form-inline">
@@ -28,7 +28,7 @@
       <h3 class="updatedTime">Last updated: <span id="time">Monday 10:00</span></h3>
       <h4 class="description" id="weatherDescription">Clouds</h4>
       <div class="currentWeatherGrid" id="current-weather-grid">
-        <div class="row">
+        <div class="row" id="current-row">
           <div class="col-3-description">
             <div class="description" id="weather-icon">
               <img src=" " alt="" id="currentIcon" />
@@ -37,7 +37,8 @@
           <div class="col-3-currentTemp" id="current-temp">
             <span id="current-temp-fig">18</span>
             <div class="mainTempUnit" id="main-unit">
-              <span class="unit" id="celsius-unit">°C</span>|<span class=farenheight id="farenheight-unit">°F</span>
+              <span id="celsius-unit">°C</span>
+              <span id="farenheight-unit">°F</span>
             </div>
           </div>
           <div class="col-3-minMax" id="current-min-max">
@@ -57,40 +58,49 @@
       </div>
     </div>
     <div class="weatherForecast" id="forecast-weather-grid">
-      <div class="row">
-        <div class="col-2-4-first" id="three-hour">
-          <div class="forecastTime" id="three-hour-time">15:00</div>
-          <div class="forecastIcon" id="three-hour-icon"><img src="" alt="" class="first"></div>
-          <div class="forecastMax" id="three-hour-max-unit"><span id="three-hour-max">18</span><span class="unit">°C</span></div>
-          <div class="forecastMin" id="three-hour-min-unit"><span id="three-hour-min">10</span><span class="unit">°C</span></div>
+      <div class="row" id="forecast-row">
+        <div class="col-2">
+          <div class="forecastTime">15:00</div>
+          <div class="forecastIcon"><img src="" alt=""class="forecastImage"/></div>
+          <div><span id="forecast-max">18</span><span class="unit">°C</span></div>
+          <div><span id="forecast-min">10</span><span class="unit">°C</span></div>
         </div>
-        <div class="col-2-4-second" id="six-hour">
-          <div class="forecastTime" id="six-hour-time">18:00</div>
-          <div class="forecastIcon" id="six-hour-icon"><img src="" alt="" class="second"></div>
-          <div class="forecastMax" id="six-hour-max-unit"><span id="six-hour-max">18</span><span class="unit">°C</span></div>
-          <div class="forecastMin" id="six-hour-min-unit"><span id="six-hour-min">10</span><span class="unit">°C</span></div>
+        <div class="col-2">
+          <div class="forecastTime">18:00</div>
+          <div class="forecastIcon"><img src="" alt="" class="forecastImage"/></div>
+          <div><span id="forecast-max">18</span><span class="unit">°C</span></div>
+          <div><span id="forecast-min">10</span><span class="unit">°C</span></div>
         </div>
-        <div class="col-2-4-third" id="nine-hour">
-          <div class="forecastTime" id="nine-hour-time">21:00</div>
-          <div class="forecastIcon" id="nine-hour-icon"><img src="" alt="" class="third"></div>
-          <div class="forecastMax" id="nine-hour-max-unit"><span id="nine-hour-max">18</span><span class="unit">°C</span></div>
-          <div class="forecastMin" id="nine-hour-min-unit"><span id="nine-hour-min">10</span><span class="unit">°C</span></div>
+        <div class="col-2">
+          <div class="forecastTime">21:00</div>
+          <div class="forecastIcon"><img src="" alt=""class="forecastImage"/></div>
+          <div><span id="forecast-max">18</span><span class="unit">°C</span></div>
+          <div><span id="forecast-min">10</span><span class="unit">°C</span></div>
         </div>
-        <div class="col-2-4-fourth" id="twelve-hour">
-          <div class="forecastTime" id="twelve-hour-time">00:00</div>
-          <div class="forecastIcon" id="twelve-hour-icon"><img src="" alt="" class="fourth"></div>
-          <div class="forecastMax" id="twelve-hour-max-unit"><span id="twelve-hour-max">18</span><span class="unit">°C</span></div>
-          <div class="forecastMin" id="twelve-hour-min-unit"><span id="twelve-hour-min">10</span><span class="unit">°C</span></div>
+        <div class="col-2">
+          <div class="forecastTime">00:00</div>
+          <div class="forecastIcon"><img src="" alt=""class="forecastImage"/></div>
+          <div><span id="forecast-max">18</span><span class="unit">°C</span></div>
+          <div><span id="forecast-min">10</span><span class="unit">°C</span></div>
         </div>
-        <div class="col-2-4-fifth" id="fifteen-hour">
-          <div class="forecastTime" id="fifteen-hour-time">03:00</div>
-          <div class="forecastIcon" id="fifteen-hour-icon"><img src="" alt="" class="fifth"></div>
-          <div class="forecastMax" id="fifteen-hour-max-unit"><span id="fifteen-hour-max">18</span><span class="unit">°C</span></div>
-          <div class="forecastMin" id="fifteen-hour-min-unit"><span id="fifteen-hour-min">10</span><span class="unit">°C</span></div>
+        <div class="col-2">
+          <div class="forecastTime">03:00</div>
+          <div class="forecastIcon"><img src="" alt=""class="forecastImage"/></div>
+          <div><span id="forecast-max">18</span><span class="unit">°C</span></div>
+          <div><span id="forecast-min">10</span><span class="unit">°C</span></div>
+        </div>
+        <div class="col-2">
+          <div class="forecastTime">06:00</div>
+          <div class="forecastIcon"><img src="" alt="" class="forecastImage"/></div>
+          <div><span id="forecast-max">18</span><span class="unit">°C</span></div>
+          <div><span id="forecast-min">10</span><span class="unit">°C</span></div>
         </div>
       </div>
     </div>
-    <script src="src/index.js"></script>
   </div>
+  <footer>
+    <a href="https://github.com/SMGluyas/Final-Project-Weather-App" target="_blank">Open-source code</a> by Sarah Gluyas
+  </footer>
+  <script src="src/index.js"></script>  
 </body>
 </html>
