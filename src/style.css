@@ -1,0 +1,96 @@
+h1 {
+  font-size: 18px;
+  margin: 10px;
+  text-align: center;
+}
+h2 {
+  padding: 4px 20px 0;
+  margin: 0;
+  line-height: 1;
+}
+
+h3 {
+  font-size: small;
+  padding: 0 20px 0;
+  margin: 0;
+}
+h4 {
+  font-size: 18px;
+  padding: 0 20px 0;
+}
+
+.container {
+  border: 0.5px solid rgb(53, 70, 102);
+  border-radius: 4px;
+  font-family: 'Catamaran', sans-serif;
+  color: rgb(53, 70, 102);
+  text-align: left;
+}
+.form-group {
+  display: block;
+  margin: 0 auto;
+}
+
+#search-input {
+  width: 250px;
+  padding: 1px 4px;
+  margin: 2px;
+}
+#search-button {
+  margin: 2px 8px 2px 2px;
+  background-color: rgb(53, 70, 102);
+}
+#find-location-button {
+  background-color: rgb(68, 131, 68);
+}
+
+#todays-weather, #three-hour, #six-hour, #nine-hour, #twelve-hour, #fifteen-hour {
+  border: 0.5px solid rgb(53, 70, 102);
+  border-radius: 4px;
+  background-color: rgba(217, 218, 216, 0.582);
+  margin: 20px;
+}
+
+.row {
+  margin: 0 auto;
+  width: 450px;
+  padding: 0;
+}
+.col-3-description, .col-3-todaysTemp, .col-3-minMax, .col-3-humWind {
+  padding: 0 10px;
+}
+
+#weather-icon {
+  font-size: 50px;
+  line-height: 1.5;
+  padding: 30px 0 10px;
+}
+
+#todays-temp-fig {
+  font-size: 80px;
+}
+#main-unit {
+  display: inline;
+  vertical-align: 150%;
+}
+#current-min-max {
+  padding: 50px 10px 40px 25px;
+}
+.col-3-humWind {
+  padding: 35px 10px 20px 35px;
+  text-align: right;
+}
+
+#forecast-weather-grid{
+  text-align: center;
+  padding: 0 0 20px;
+}
+
+#three-hour, #six-hour, #nine-hour, #twelve-hour, #fifteen-hour {
+  padding: 8px 25px;
+  margin: 20px auto;
+}
+
+.forecastTime {
+  font-size: 14px;
+}
