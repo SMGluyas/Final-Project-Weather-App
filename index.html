@@ -29,24 +29,19 @@
       <h4 class="description" id="weatherDescription">Clouds</h4>
       <div class="currentWeatherGrid" id="current-weather-grid">
         <div class="row" id="current-row">
-          <div class="col-3-description">
-            <div class="description" id="weather-icon">
+          <div class="col-4-icon">
+            <div class="icon" id="weather-icon">
               <img src=" " alt="" id="currentIcon" />
             </div>
           </div>
-          <div class="col-3-currentTemp" id="current-temp">
+          <div class="col-4-currentTemp" id="current-temp">
             <span id="current-temp-fig">18</span>
-            <div class="mainTempUnit" id="main-unit">
-              <span id="celsius-unit">°C</span>
-              <span id="farenheight-unit">°F</span>
-            </div>
+            <ul class="mainTempUnit" id="main-unit">
+              <li id="celsius-unit">°C </li>|
+              <li class="clickable" id="farenheight-unit">°F</li>
+            </ul>
           </div>
-          <div class="col-3-minMax" id="current-min-max">
-            <span id="min">12</span><span class="unit">°C</span>
-            |
-            <span id="max">20</span><span class="unit">°C</span>
-          </div>
-          <div class="col-3-humWind">
+          <div class="col-4-humWind">
             <div id="humidity">
               Humidity: <span id="humidity-fig">70</span>%
             </div>
